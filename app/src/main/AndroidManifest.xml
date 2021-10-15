@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.worldofmovies">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WorldOfMovies">
+        <activity android:name=".TMDBList"></activity>
+        <activity android:name=".TMDBServices" />
+        <activity android:name=".ExtensionFunctions" />
+        <activity android:name=".MovieDetailViewFactory" />
+        <activity android:name=".MovieAdapter" />
+        <activity android:name=".MovieDetailViewModel" />
+        <activity android:name=".MovieListViewModel" />
+        <activity android:name=".MovieListRepositry" />
+        <activity android:name=".MovieDetailRepositry" />
+        <activity
+            android:name=".MovieDatabase"
+            android:label="@string/title_activity_movie_database"
+            android:theme="@style/Theme.WorldOfMovies.NoActionBar" />
+        <activity android:name=".MovieDetailDao" />
+        <activity android:name=".MovieListDao" />
+        <activity android:name=".DateConverter" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
